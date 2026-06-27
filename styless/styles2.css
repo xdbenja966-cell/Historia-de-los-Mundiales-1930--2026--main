@@ -1,0 +1,160 @@
+body {
+    background:#6b6b6b;
+    background-image:linear-gradient(#7a7a7a,#555);
+    font-family:Georgia,serif;
+    margin:0;
+    color:#eee;
+}
+
+/* HEADER */
+.header {
+    background:#3b3b3b;
+    padding:30px;
+    text-align:center;
+    border-bottom:5px solid rgb(2, 83, 121);
+}
+
+/* ARRIBA */
+.top-header {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    height: 50px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    background: #3b3b3b;
+}
+
+.menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #8a8672;
+}
+
+/* CONTENIDO */
+main {
+    padding-top: 130px;
+}
+
+.bandera{
+    width:24px;
+    height:16px;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.selecciones{
+    align-items: center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+section {
+    padding: 50px;
+    min-height: 100vh;
+}
+
+h1, h2{
+    color:#f1e3b0
+}
+
+.bloque{
+    background:#4b4b4b;
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    border:2px solid #999;
+    border-radius:10px;
+    box-shadow:0 0 15px rgb(255, 208, 0);
+}
+
+.bloque1{
+    background:#4b4b4b;
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    border:2px solid #999;
+    border-radius:10px;
+    box-shadow:0 0 15px rgb(0, 225, 255);
+}
+
+
+img{
+    display:block;
+    width:70%;
+    max-width:700px;
+    margin:20px auto;
+    border:5px solid #aaa;
+    border-radius:8px;
+}
+    
+
+/* TARJETAS */
+.contenedor {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta {
+    background: #1c3d6e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.siglo21{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.introduccion{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mundial-card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    color: #222;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.mundial-card img{
+    width: 90px;
+    height: auto;
+}
+
+.info{
+    flex: 1;
+}
+
+.info h3{
+    margin-top: 0;
+    color: #0057b8;
+}
+
+.info p{
+    margin: 8px 0;
+    line-height: 1.6;
+}

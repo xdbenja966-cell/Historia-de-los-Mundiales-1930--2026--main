@@ -1,0 +1,414 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1E8449;
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#145A32;
+    z-index:1000;
+}
+
+.top-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.logo{
+    position:absolute;
+    left:20px;
+    height:60px;
+}
+
+.top-header h1{
+    font-size:40px;
+}
+
+main{
+    padding-top:120px;
+}
+
+section{
+    padding:20px;
+}
+
+h2, h4{
+    text-align:center;
+    color:#fdd700;
+    font-size:35px;
+}
+
+h3{
+    color:#fdd700;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+
+ul,
+ol,
+li{
+    font-family:'Times New Roman', Times, serif;
+    font-size:22px;
+}
+
+.infog{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.bandera{
+    width:24px;
+    height:16px;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.selecciones{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    margin-bottom:40px;
+}
+
+.card img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    border:2px solid white;
+    padding:10px;
+    text-align:center;
+    background-color: #666;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+th{
+    background-color:#af0a0a;
+}
+
+.equipo-estelar{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.equipo-estelar h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.equipo-estelar p{
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.tabla-estelar{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-estelar th,
+.tabla-estelar td{
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-estelar th{
+    background: #d4af37;
+    color: white;
+}
+
+.tabla-estelar img{
+    width: 35px;
+    height: auto;
+}
+
+.fasedegrupos{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* TARJETAS */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.tarjeta {
+    background: #268f1c;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 500px;
+}
+
+.tarjeta1 {
+    background: #268f1c;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 260px;
+}
+
+.tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.tarjeta1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.balon-oficial{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.pelota{
+    width:90%;
+    margin:40px auto;
+}
+
+.pelota h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.pelota-contenido{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.pelota-contenido img{
+    width:250px;
+    border:3px solid black;
+}
+
+.info{
+    flex: 1;
+}
+
+.info h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.info h4{
+    margin-top:20px;
+    border-bottom:2px solid black;
+    padding-bottom:5px;
+}
+
+.info p,
+.info li{
+    line-height:1.6;
+}
+
+.info ul{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:900px){
+
+    .pelota-contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pelota-contenido img{
+        width: 260px;
+    }
+
+    .pelota h2{
+        font-size: 30px;
+    }
+
+    .pelota-info h3{
+        font-size: 24px;
+    }
+
+    .pelota-info p,
+    .pelota-info li{
+        font-size: 16px;
+    }
+
+}
+
+footer{
+    background-color: #0B3D1E;
+    color:#ffffff;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    background: #0B3D1E;
+}
+
+.menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #205f10;
+}
+
+a:hover {
+    color: #ffd000; /* dorado tipo copa */
+}
+
+.bracket{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.ronda h3{
+    text-align:center;
+    border:1px solid #666;
+    padding:10px;
+    margin-bottom:20px;
+    background-color: #236e1c;
+}
+
+.partido{
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid #666;
+    margin-bottom:60px;
+    width:250px;
+    background-color: #236e1c;
+}
+
+.equipo{
+    font-family:'Times New Roman', Times, serif;
+    display:flex;
+    justify-content:space-between;
+    padding:8px;
+    border-bottom:1px solid #666;
+}
+
+.equipo:last-child{
+    border-bottom:none;
+}
+
+.conexion{
+    width:40px;
+    height:145px;
+    border-right:3px solid rgb(8, 167, 16);
+    border-top:3px solid rgb(8, 167, 16);
+    border-bottom:3px solid rgb(8, 167, 16);
+}
+
+.conexion1{
+    width:40px;
+    height:900px;
+    border-right:3px solid rgb(8, 167, 16);
+    border-top:3px solid rgb(8, 167, 16);
+    border-bottom:3px solid rgb(8, 167, 16);
+}
+
+.conexion2{
+    width:40px;
+    height:390px;
+    border-right:3px solid rgb(8, 167, 16);
+    border-top:3px solid rgb(8, 167, 16);
+    border-bottom:3px solid rgb(8, 167, 16);
+}
+
+details{
+    text-align:center;
+}
+
+details p{
+    font-size: 17px;
+}
+
+small{
+    font-size: 14px;
+}
+
+th h2{
+    color: #ffffff;
+}
+
+.resultado-partido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    color: white;
+    border: 1px solid #777;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.fecha{
+    width: 180px;
+    color: #ddd;
+}
+
+.equipos{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.marcador{
+    font-size: 22px;
+    color: white;
+}
+
+.marcador small{
+    font-size: 14px;
+    color: #bbb;
+}
+
+.estadio{
+    width: 200px;
+    text-align: right;
+    color: #ddd;
+}
