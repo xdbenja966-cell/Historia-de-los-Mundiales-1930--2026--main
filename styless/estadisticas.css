@@ -42,12 +42,13 @@ body{
 
 .menu-flotante a{
     color: #ffd900;
-    text-decoration: none;
+    text-decoration:dotted;
     font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 25px;
+    padding: 5px 10px;
+    border-radius: 30px;
     transition: .3s;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .menu-flotante a:hover{
