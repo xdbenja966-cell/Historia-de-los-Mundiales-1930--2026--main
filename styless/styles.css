@@ -23,7 +23,6 @@ body {
 }
 
 .logo {
-    position: absolute;
     left: 20px;
     height: 50px;
 }
@@ -124,7 +123,8 @@ a:hover {
     color: #ffd700; /* dorado tipo copa */
 }
 
-footer p {
+footer{
     font-family: 'Times New Roman', Times, serif;
     color: #ffd700;
+    background-color: #1c3d6e;
 }

@@ -168,11 +168,11 @@ th{
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
-    width: 60%;
+    width: 350px;
 }
 
 .tarjeta1 {
-    background: #268f1c;
+    background: #1c528f;
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -188,6 +188,34 @@ th{
 .tarjeta1:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.navegacion-anios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 900px;
+    margin: 30px auto;
+}
+
+.btn-anio{
+    background: #FFD700;
+    color: #222;
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(255,215,0,.6);
+}
+
+.btn-anio:hover{
+    background: white;
+    color: #000;
+    transform: scale(1.05);
 }
 
 .pelota1938{

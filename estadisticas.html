@@ -7,12 +7,6 @@
 <link rel="stylesheet" href="styless/estadisticas.css">
 <link rel="icon" href="img/kopas/pa.jpg">
 </head>
-<div class="menu-flotante">
-    <a href="index.html"><img class="logo" src="img/kopa.jpg" alt="FIFA"></a>
-    <a href="mundial.html">Menú de Mundiales</a>
-    <a href="historia.html">Historia</a>
-    <a href="estadisticas.html">Estadísticas</a>
-</div>
 <body>
 
 <header class="hero">
@@ -56,7 +50,7 @@ de las Copas del Mundo FIFA.
 <td><img src="img/jugadores/messi.jpg"></td>
 <td>Lionel Messi</td>
 <td>Argentina</td>
-<td>18</td>
+<td>19</td>
 
 </tr>
 
@@ -748,11 +742,37 @@ de las Copas del Mundo FIFA.
 
     <marquee>
 
-        <p>--- Datos y Estadisticas ---</p>
+        <p>Trabajo Hecho por Ciro Villar, Benjamin Suarez y Lucas Yuricich</p>
 
     </marquee>
     
     </footer>
     
+    <div class="menu-flotante">
+        <h3>Menú Principal</h3>
+    
+        <div class="menu-opciones">
+            <a href="index.html"><img src="img/kopa.png" class="logo" title="inicio"></a>
+            <a href="mundial.html">⚽ Mundiales</a>
+            <a href="historia.html">📖 Historia</a>
+            <a href="estadisticas.html">📊 Estadísticas</a>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector(".menu-flotante");
+        
+        window.addEventListener("scroll", () => {
+            const scroll = window.scrollY + window.innerHeight;
+            const altura = document.documentElement.scrollHeight;
+        
+            if (scroll >= altura - 20) {
+                menu.style.position = "absolute";
+                menu.style.bottom = "20px";
+            } else {
+                menu.style.position = "fixed";
+                menu.style.bottom = "20px";
+            }
+        });
+        </script>
     </body>
     </html>
