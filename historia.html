@@ -8,6 +8,7 @@
 <link rel="icon" href="img/kopas/pa.jpg">
 </head>
 <body>
+    <body id="top">
 <header class="header">
     
         <div class="top-header">
@@ -20,9 +21,10 @@
         </nav>
     </div>
 </header>
+<section id="parte1">
 
 <section class="bloque1">
-<h2>Parte I - La Fundación de la FIFA y los Primeros Pasos (1904–1928)</h2>
+<center><h2>Parte I - La Fundación de la FIFA y los Primeros Pasos (1904–1928)</h2></center>
 <img src="img/fifa.png" alt="FIFA">
 <p><p>
     El <strong>21 de mayo de 1904</strong> se fundó en París la
@@ -76,7 +78,9 @@
     Esta decisión dio origen, años más tarde, a la Copa Mundial de la FIFA.
 </p></p>
 </section>
+</section>
 
+<section id="parte2">
 <section class="bloque">
 <h2>Parte II - El Nacimiento de la Copa del Mundo y la Era de Oro Inicial (1930–1938)</h2>
 <img src="img/estadios/1930/centenario.jpg" alt="Uruguay 1930">
@@ -136,7 +140,9 @@
 </p>
 </article>
 </section>
+</section>
 
+<section id="parte3">
 <section class="bloque">
 <h2>Parte III - Pausa Bélica y la Reconstrucción (1942–1954)</h2>
 <img src="img/estadios/1950/maracana.jpg" alt="Maracaná">
@@ -182,7 +188,9 @@
         sorpresas en la historia de los Mundiales.
     </p>
 </section>
+</section>
 
+<section id="parte4">
 <section class="bloque">
 <h2>Parte IV - La Era de Pelé, la Globalización y la Televisión (1958–1978)</h2>
 <img src="img/jugadores/pele.jpg" alt="Pelé">
@@ -246,7 +254,9 @@
     </p>
 
 </section>
+</section>
 
+<section id="parte5">
 <section class="bloque">
 <h2>Parte V - Maradona</h2>
 <img src="img/jugadores/maradona.jpg" alt="Maradona">
@@ -307,7 +317,9 @@
     </p>
 
 </section>
+</section>
 
+<section id="parte6">
 <section class="bloque">
     <section class="siglo21">
 <h2>Parte VI: El Siglo XXI y las Nuevas Fronteras (2002–2022)</h2>
@@ -419,6 +431,9 @@
 </article>
 </section>
 </section>
+</section>
+
+<section id="parte7">
 <section class="bloque">
 <h2>Parte VII - Mundial 2026</h2>
 <img src="img/estadios/2026/kalifornia.jpg" alt="2026">
@@ -491,6 +506,51 @@
 </p>
 
 </section>
+</section>
 
+<div class="menu-flotante">
+    <h3>PARTES</h3>
+
+    <div class="menu-opciones">
+        <a href="#parte1">Parte<br> I</a>
+        <a href="#parte2">Parte<br>II</a>
+        <a href="#parte3">Parte<br>III</a>
+        <a href="#parte4">Parte<br>IV</a>
+        <a href="#parte5">Parte<br>V</a>
+        <a href="#parte6">Parte<br>VI</a>
+        <a href="#parte7">Parte<br>VII</a>
+    </div>
+</div>
+<div id="final"></div>
+<a href="#final" class="btn-abajo" title="Ir al final">
+    ▼
+</a>
+<a href="#top" class="btn-arriba" title="Ir al Inicio">
+    ▲
+</a>
+<div style="height:100px;"></div>
+    <footer>
+        <marquee>
+            <p><center>La Historia que tenias que saber...
+            <br>
+            <span>Trabajo Hecho por Benjamin Suarez, Ciro Vilar y Lucas Yuricich </span></center></p>
+        </marquee>
+    </footer>
+    <script>
+        const menu = document.querySelector(".menu-flotante");
+        
+        window.addEventListener("scroll", () => {
+            const scroll = window.scrollY + window.innerHeight;
+            const altura = document.documentElement.scrollHeight;
+        
+            if (scroll >= altura - 20) {
+                menu.style.position = "absolute";
+                menu.style.bottom = "20px";
+            } else {
+                menu.style.position = "fixed";
+                menu.style.bottom = "20px";
+            }
+        });
+        </script>
 </body>
 </html>

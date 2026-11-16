@@ -1,0 +1,425 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#52a7cc;
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#00aeff;
+    z-index:1000;
+}
+
+.top-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-family:'Bebas Neue', sans-serif;
+}
+
+.logo{
+    position:absolute;
+    left:20px;
+    height:60px;
+}
+
+.top-header h1{
+    font-size:40px;
+}
+
+main{
+    padding-top:120px;
+}
+
+section{
+    padding:20px;
+}
+
+h2, h4{
+    text-align:center;
+    color:#ffd700;
+    font-size:35px;
+}
+
+h3{
+    color:#ffd700;
+}
+
+p, small{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+
+ul,
+ol,
+li{
+    font-family:'Times New Roman', Times, serif;
+    font-size:22px;
+}
+
+.bandera{
+    width:24px;
+    height:16px;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.medalla{
+    width:30px;
+    height:20px;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.selecciones{
+    align-items: center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    margin-bottom:140px;
+}
+
+.card img{
+    width:60%;
+    max-width:30px;
+    border-radius:100px;
+}
+
+.pelota{
+    width:90%;
+    margin:40px auto;
+}
+
+.pelota h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.pelota-contenido{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.pelota-contenido img{
+    width:250px;
+    border:3px solid black;
+}
+
+.info{
+    flex: 1;
+}
+
+.info h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.info h4{
+    margin-top:20px;
+    border-bottom:2px solid black;
+    padding-bottom:5px;
+}
+
+.info p,
+.info li{
+    line-height:1.6;
+}
+
+.info ul{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:900px){
+
+    .pelota-contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pelota-contenido img{
+        width: 260px;
+    }
+
+    .pelota h2{
+        font-size: 30px;
+    }
+
+    .pelota-info h3{
+        font-size: 24px;
+    }
+
+    .pelota-info p,
+    .pelota-info li{
+        font-size: 16px;
+    }
+
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border:2px solid rgb(255, 255, 255);
+    padding:10px;
+    text-align:center;
+    background-color: rgb(153, 148, 148);
+}
+
+th{
+    background-color:#29548d;
+}
+
+.fasedegrupos{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.navegacion-anios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 900px;
+    margin: 30px auto;
+}
+
+.btn-anio{
+    background: #FFD700;
+    color: #222;
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(255,215,0,.6);
+}
+
+.btn-anio:hover{
+    background: white;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* TARJETAS */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.tarjeta{
+    background: #1c3d6e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 260px;
+}
+
+.tarjeta1{
+    background: #1c3d6e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 500px;
+}
+
+.tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+footer{
+    background-color: #2A5D9F;
+    color:#ffd700;
+}
+
+
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    background: #0099ff;
+}
+
+.menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #00a2ff;
+}
+
+a:hover {
+    color: #ffd000; /* dorado tipo copa */
+}
+
+u {
+    color:#ffd700;
+}
+
+td p{
+    font-size: 20px;
+}
+
+.bracket{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bracket1{
+    display:flex;
+    gap:40px;
+
+    width:fit-content;
+    margin:auto;
+
+    overflow-x:hidden;
+}
+
+.ronda h3{
+    text-align:center;
+    border:1px solid #666;
+    padding:10px;
+    margin-bottom:20px;
+    background-color: #1c3d6e;
+}
+
+.partido{
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid #666;
+    margin-bottom:80px;
+    width:250px;
+    background-color: #1c3d6e;
+}
+
+.equipo{
+    font-family:'Times New Roman', Times, serif;
+    display:flex;
+    justify-content:space-between;
+    padding:8px;
+    border-bottom:1px solid #666;
+}
+
+.equipo:last-child{
+    border-bottom:none;
+}
+
+.final{
+    margin-top: 75px;
+}
+
+.conexion{
+    width:40px;
+    height:150px; /* ajustar */
+    margin-top:115px; /* bajar o subir */
+    
+    border-right:3px solid rgb(0, 140, 255);
+    border-top:3px solid rgb(0, 140, 255);
+    border-bottom:3px solid rgb(0, 140, 255);
+}
+
+.izquierda{
+    left: -70px;
+}
+
+.derecha{
+    right: -70px;
+}
+
+.contenedor-carrusel{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+details{
+    text-align:center;
+}
+
+details p{
+    font-size: 17px;
+}
+
+small{
+    font-size: 16px;
+}
+
+.resultado-partido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    color: white;
+    border: 1px solid #777;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.fecha{
+    width: 180px;
+    color: #ddd;
+}
+
+.equipos{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.marcador{
+    font-size: 22px;
+    color: white;
+}
+
+.marcador small{
+    font-size: 14px;
+    color: #bbb;
+}
+
+.estadio{
+    width: 200px;
+    text-align: right;
+    color: #ddd;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

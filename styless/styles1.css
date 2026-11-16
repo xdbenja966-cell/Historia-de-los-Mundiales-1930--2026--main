@@ -27,7 +27,7 @@ body {
     position: relative;
 }
 
-.logo {
+.logo1{
     position: absolute;
     left: 20px;
     height: 50px;
@@ -76,6 +76,58 @@ section {
     width: 90%;
 }
 
+.tarjeta1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 15px;
+    width: 900px;
+
+    margin: 0 auto 40px auto; /* ← separación inferior */
+}
+
+.tarjeta1 img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tarjeta2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: #2d2d2d;
+    padding: 20px; /* ← antes decía 150px */
+    border-radius: 15px;
+    width: 900px;
+
+    margin: 0 auto 40px auto; /* ← separación inferior */
+}
+
+.tarjeta2 img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.inf{
+    flex: 1;
+}
+
+.inf h2{
+    color: gold;
+    margin-top: 10;
+}
+
+.inf p{
+    color: white;
+    text-align: justify;
+}
+
 .card{
     margin-bottom:40px;
 }
@@ -117,4 +169,54 @@ a:hover {
 footer {
     font-family: 'Times New Roman', Times, serif;
     color: #ffd700;
+    background-color: #2f5aa8;
+}
+
+.menu-flotante{
+    position: fixed;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+
+    width: 320px;
+    background: rgba(35,35,35,.95);
+
+    border: 2px solid gold;
+    border-radius: 18px;
+
+    padding: 10px;
+
+    box-shadow: 0 0 18px rgba(255,215,0,.45);
+
+    z-index: 9999;
+}
+
+.menu-flotante h3{
+    text-align: center;
+    color: gold;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.menu-opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-opciones a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    transition: .3s;
+    padding: 8px 4px;
+}
+
+.logo{
+    width:60px;
+    margin-bottom:10px;
+    padding:1px;
 }

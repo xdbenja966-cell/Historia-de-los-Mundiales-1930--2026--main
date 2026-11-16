@@ -14,7 +14,7 @@
 
     <!-- Parte superior -->
     <div class="top-header">
-        <a href="index.html"><img src="img/kopas/pa.jpg" class="logo"></a>
+        <a href="index.html"><img src="img/kopas/pa.jpg" class="logo1"></a>
         <h1>Historia de los Mundiales</h1>
     </div>
 
@@ -28,45 +28,54 @@
 </header>
 
 <!-- CONTENIDO -->
-<main>
+<section id="Intro">
+    <main>
 
-    <section>
-
-        <h2>¡Bienvenido a la sección Mundiales!</h2>
+        <center><h2>¡Bienvenido a la sección Mundiales!</h2></center>
         <p>
             Acá nos subimos a la máquina del tiempo para repasar la historia del torneo más hermoso del planeta. Vamos a viajar desde los potreros de los años 30, donde se jugaba con pelotas de tiento, hasta los estadios futuristas de hoy en día.<br> Preparate para un recorrido lleno de mística, leyendas, goles inolvidables y las historias que hicieron grande al deporte rey.<br>
             ¡Arrancamos el viaje!
         </p>
-        <div class="card">
-        
-            <h3>Mundial 1930 - El Primer Mundial ⚽</h3>
+
+            <div class="tarjeta1">
+
+                <img src="img/kopas/1930.jpg" alt="Fútbol">
             
-            <img src="img/kopas/1930.jpg" alt="Mundial1930">
+                <div class="inf">
+                    <h2>Mundial 1930 - El Primer Mundial ⚽</h2>
             
-            <p>
-                El inicio de la leyenda. Uruguay fue el escenario donde doce selecciones valientes cruzaron el mapa para disputar la primera Copa del Mundo de la FIFA. En una época de viajes eternos en barco y fútbol puro, la Celeste se consagró como el primer campeón de la historia en su propia casa, venciendo a Argentina en una final épica que fundó la máxima rivalidad del fútbol rioplatense.
-            </p>
+                    <p>
+                        El fútbol es uno de los deportes más populares del mundo.
+                        Se juega entre dos equipos de once jugadores y el objetivo
+                        es marcar más goles que el rival.
+                    </p>
+                    <p>
+                        El inicio de la leyenda. Uruguay fue el escenario donde doce selecciones valientes cruzaron el mapa para disputar la primera Copa del Mundo de la FIFA. En una época de viajes eternos en barco y fútbol puro, la Celeste se consagró como el primer campeón de la historia en su propia casa, venciendo a Argentina en una final épica que fundó la máxima rivalidad del fútbol rioplatense.
+                    </p>
+                </div>
             
             </div>
             
-            <div class="card">
-            
-            <h3>Mundial 2026 - Actual ⚽</h3>
-            
-            <img src="img/kopas/2026.jpg" alt="Mundial2026">
-            
-            <p>
-                Llegamos al presente con una edición histórica y sin precedentes. Norteamérica (Estados Unidos, México y Canadá) se viste de gala para albergar el primer Mundial de la historia con 48 selecciones. Con más partidos, más estrellas y una escala nunca antes vista, este torneo redefine el fútbol moderno, llevando la pasión global a todos los rincones del continente.
-            </p>
-            
-        </div>
-        <p>
-            A Continuacion se veran todos los Mundiales que hubo en la historia!
-        </p>
-    </section>
+            <div class="tarjeta2">
 
-    <section id="mundiales">
-    <h2>Mundiales Destacados</h2>
+                <img src="img/kopas/2026.jpg" alt="Fútbol">
+            
+                <div class="inf">
+                    <h2>Mundial 2026 - Actual ⚽</h2>
+            
+                    <p>
+                        Llegamos al presente con una edición histórica y sin precedentes. Norteamérica (Estados Unidos, México y Canadá) se viste de gala para albergar el primer Mundial de la historia con 48 selecciones. Con más partidos, más estrellas y una escala nunca antes vista, este torneo redefine el fútbol moderno, llevando la pasión global a todos los rincones del continente.
+                    </p>
+                </div>
+            
+            </div>            
+        <center><h2>A Continuacion se veran todos los Mundiales que hubo en la historia!</h2></center>
+    </section>
+</main>
+
+<section id="mundiales">
+    <main>
+    <center><h2>Mundiales Destacados</h2></center>
 
     <div class="contenedor">
 
@@ -257,5 +266,40 @@
     </div>
     </section>
 </main>
+<div style="height:100px;"></div>
+<footer>
+
+    <marquee>
+
+        <p>Trabajo Hecho por Ciro Villar, Benjamin Suarez y Lucas Yuricich</p>
+
+    </marquee>
+    
+    </footer>
+<div class="menu-flotante">
+    <h3>Menú Principal</h3>
+
+    <div class="menu-opciones">
+        <a href="#Intro">📖 Introduccion</a>
+        <a href="#mundiales">⚽ Mundiales</a>
+    </div>
+</div>
+
+<script>
+    const menu = document.querySelector(".menu-flotante");
+    
+    window.addEventListener("scroll", () => {
+        const scroll = window.scrollY + window.innerHeight;
+        const altura = document.documentElement.scrollHeight;
+    
+        if (scroll >= altura - 20) {
+            menu.style.position = "absolute";
+            menu.style.bottom = "20px";
+        } else {
+            menu.style.position = "fixed";
+            menu.style.bottom = "20px";
+        }
+    });
+    </script>
 </body>
 </html>

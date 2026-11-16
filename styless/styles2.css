@@ -158,3 +158,123 @@ img{
     margin: 8px 0;
     line-height: 1.6;
 }
+
+.btn-arriba{
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background: #FFD700;
+    color: #222;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(255,215,0,0.7);
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+.btn-abajo{
+    position: fixed;
+    bottom: 30px;      /* Arriba del botón de subir */
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #FFD700;
+    color: #222;
+
+    text-decoration: none;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 0 15px rgba(255,215,0,.7);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.btn-abajo:hover{
+    background: rgb(255, 196, 0);
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.btn-arriba:hover{
+    background: rgb(255, 196, 0);
+    color: #000000;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.menu-flotante{
+    position: fixed;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+
+    width: 320px;
+    background: rgba(35,35,35,.95);
+
+    border: 2px solid gold;
+    border-radius: 18px;
+
+    padding: 10px;
+
+    box-shadow: 0 0 18px rgba(255,215,0,.45);
+
+    z-index: 9999;
+}
+
+.menu-flotante h3{
+    text-align: center;
+    color: gold;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.menu-opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-opciones a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    transition: .3s;
+    padding: 8px 4px;
+}
+
+/* Línea divisoria */
+.menu-opciones a:not(:last-child){
+    border-right: 2px solid rgba(255,215,0,.4);
+}
+
+.menu-opciones a:hover{
+    color: gold;
+    transform: translateY(-5px);
+}
+
+.menu-opciones a{
+    line-height: 1.5;
+}
+
+footer{
+    color: black;
+    background-color: #ffd900e3;
+}
